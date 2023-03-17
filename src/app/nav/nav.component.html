@@ -1,0 +1,57 @@
+<div class="top-nav">
+  <mat-toolbar>
+    <span class="logo-text"> <a routerLink="">Airy Tales</a></span>
+
+    <span class="nav-spacer"></span>
+
+    <button
+      mat-icon-button
+      class="nav-icon"
+      aria-label="icon-button with cart icon"
+    >
+      <mat-icon matBadge="5" matBadgeColor="warn" routerLink="cart"
+        >shopping_cart</mat-icon
+      >
+    </button>
+
+    <button
+      mat-icon-button
+      class="nav-icon"
+      aria-label="icon-button with account icon"
+      routerLink="account"
+    >
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      class="nav-icon"
+      aria-label="icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span> <a routerLink="products">Products</a></span>
+      </button>
+
+      <button mat-menu-item>
+        <span><a routerLink="about">About Us</a></span>
+      </button>
+
+      <button mat-menu-item>
+        <span><a routerLink="news">News</a></span>
+      </button>
+
+      <button mat-menu-item>
+        <span><a routerLink="faq">FAQ</a></span>
+      </button>
+
+      <button mat-menu-item>
+        <span><a routerLink="contact">Contact Us</a></span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</div>

@@ -1,0 +1,31 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+
+  .products-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 1.5rem 8rem 0 0;
+
+    input {
+      width: 20%;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+
+  app-product {
+    margin: 2rem;
+    width: 25%;
+  }
+}

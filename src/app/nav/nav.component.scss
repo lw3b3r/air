@@ -1,0 +1,25 @@
+mat-toolbar {
+  background-color: #1b1b1c;
+  color: #fff;
+  padding: 2.5rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.logo-text {
+  font-size: 3rem;
+  font-weight: 600;
+  a {
+    color: #fff;
+  }
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
