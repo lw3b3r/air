@@ -8,14 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material/icon';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatCardModule } from '@angular/material/card';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
 import { NewsComponent } from './news/news.component';
@@ -24,6 +16,17 @@ import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { FaqComponent } from './faq/faq.component';
     MatMenuModule,
     HttpClientModule,
     MatCardModule,
+    MatPaginatorModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
